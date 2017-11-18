@@ -18,7 +18,7 @@ batch_size: 5
 
 Average loss was after 30 Epochs at 0.025. Performance is very good, but not perfect,
 
-![](Bildschirmfoto 2017-11-16 um 00.12.55.png)
+![](runs/traning_loss.png)
 
 ### Images 
 
