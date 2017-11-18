@@ -2,6 +2,39 @@
 ### Introduction
 In this project, you'll label the pixels of a road in images using a Fully Convolutional Network (FCN).
 
+### Approach
+The Code can be found in the Jupyter notebook. [Semantic-Segmentation](Semantic-Segmentation.ipynb)
+
+A VGG-16 network was converted to a fully convulation network.  Skip connection were used for a better performache. Based on this  implementation [ FCN-8 architecture](https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf)
+
+Adam was used as a optimizer with cross-entropy loss function.
+
+The hyperparameters used for training are:
+
+keep_prob: 0.5
+learning_rate: 0.0009
+epochs: 30
+batch_size: 5
+
+Average loss was after 30 Epochs at 0.025. Performance is very good, but not perfect,
+
+![](Bildschirmfoto 2017-11-16 um 00.12.55.png)
+
+### Images 
+
+
+![](runs/1510787455.012058/uu_000069.png)
+![](runs/1510787455.012058/uu_000071.png)
+
+![](runs/1510787455.012058/uu_000079.png)
+
+![](runs/1510787455.012058/uu_000098.png)
+
+
+![](runs/1510787455.012058/uu_000090.png)
+
+![](runs/1510787455.012058/uu_000080.png)
+
 ### Setup
 ##### Frameworks and Packages
 Make sure you have the following is installed:
